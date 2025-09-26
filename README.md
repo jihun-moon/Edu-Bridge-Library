@@ -39,6 +39,7 @@
   ![AI 추천 시스템 아키텍처](images/AI_Recommendation_System_Architecture.png)
 
 - **메인 대시보드**
+
   ![메인 대시보드](images/App_Main_Dashboard.png)
 
 - **사용자 선호도 분석 그래프**
