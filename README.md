@@ -1,85 +1,58 @@
-# 📚 초등학생 학습 연계 도서관 프로그램 제안을 위한 데이터 분석
+# Edu-Bridge-Library
 
-**대구 2.28 기념 도서관의 대출 데이터를 분석하여, 초등학생들의 학습 능력 향상을 위한 맞춤형 도서 추천 및 연계 프로그램을 제안하는 프로젝트입니다.**
+코드는 이 저장소에, 상세 문서·스크린샷·회고는 Notion에 정리합니다.
 
-<br>
+## 🔗 Notion
 
-## 🎯 프로젝트 목표
-* 도서관 대출 데이터의 패턴을 분석하여 초등학생 이용자의 특성을 파악합니다.
-* 분석 결과를 바탕으로 효과적인 '학습 연계 도서관 프로그램'을 기획하고 제안합니다.
-* 데이터 시각화를 통해 제안 내용의 설득력을 높입니다.
+- 상세 문서: [https://notion.so/](https://www.notion.so/Mentoring-Lab-27972d9f979f80788ea5dde9d89c5008?source=copy_link)
 
-<br>
+## 🚀 실행
 
-## 🛠️ 사용 기술
-* **언어**: Python
-* **라이브러리**: Pandas, Matplotlib, Seaborn, Scikit-learn 등 (사용한 라이브러리 나열)
+데이터 분석과 리포트 재현을 위한 환경입니다.
 
-<br>
+- 요구 사항
+    - Python 3.10+
+    - JDK나 Android Studio는 필요하지 않음
+- 설치
 
-## 📁 리포지토리 파일 구조
+```bash
+# 선택: 가상환경
+python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
 
-가장 일반적이고 다른 사람들이 이해하기 쉬운 데이터 분석 프로젝트 구조입니다. 아래 구조대로 폴더와 파일을 만들어 보세요.
-
-```
-.
-├── 📂 data                  # 데이터 파일 보관
-│   ├── daegu_2.28_lib_07.csv     # 원본 데이터
-│   └── categorization_results.csv  # 분석 결과 데이터
-│
-├── 📂 notebooks              # Jupyter Notebook 파일 보관
-│   └── 도서관_공모전_데이터.ipynb
-│
-├── 📂 report                 # 보고서 및 제안서 파일 보관
-│   └── [서비스 아이디어 제안]초등학생을 위한 학습 연계 도서관 프로그램(이규원).pdf
-│
-├── 📂 images                 # README나 보고서에 사용할 이미지 보관
-│   ├── image_18e9dc.png
-│   ├── image_18ea3a.png
-│   └── image_18f0c1.jpg
-│
-└── 📜 README.md             # 프로젝트 설명서 (가장 중요!)
+# 필수 패키지 설치
+pip install pandas matplotlib plotly jupyter
 ```
 
-**각 폴더의 역할**
+- 노트북 실행
 
-  * **`data/`**: 모든 `.csv` 데이터 파일을 이곳에 넣습니다. 원본 데이터와 가공된 데이터를 구분하면 더 좋습니다.
-  * **`notebooks/`**: 데이터 분석을 진행한 `.ipynb` 코드를 이곳에 넣습니다.
-  * **`report/`**: 최종 결과물인 PDF 제안서를 이곳에 넣습니다.
-  * **`images/`**: 분석 결과로 나온 그래프나 프로젝트를 설명하는 데 필요한 이미지들을 이곳에 보관합니다.
-  * **`README.md`**: 리포지토리의 대문 역할을 하는 파일로, 프로젝트의 모든 것을 요약해서 보여줍니다.
+```bash
+jupyter notebook notebooks/library_program_analysis.ipynb
+```
 
------
-<br>
+## 📂 폴더
 
-## 📊 분석 과정 및 결과
+- data/
+    - daegu_2.28_lib_07.csv
+    - processed_book_categories.csv
+- images/
+    - AI_Recommendation_System_Architecture.png
+    - App_Main_Dashboard.png
+    - Map_Based_Program_Search.png
+    - Mentoring_Program_Process.png
+    - MyPage_Course_History.png
+    - Program_Expected_Benefits.png
+    - User_Preference_Analysis_Graph.png
+- notebooks/
+    - library_program_analysis.ipynb
+- report/
+    - library_program_proposal.pdf
 
-### 1. 데이터 전처리
-(데이터를 어떻게 정제하고 준비했는지 간단히 설명)
+## 🖼️ 스크린샷
 
-### 2. 탐색적 데이터 분석 (EDA)
-(데이터 분석을 통해 어떤 인사이트를 발견했는지 설명)
+- images/App_Main_Dashboard.png
+- images/AI_Recommendation_System_Architecture.png
+- images/User_Preference_Analysis_Graph.png
 
-### 3. 주요 분석 결과 시각화
-(가장 중요하고 흥미로운 결과 그래프 이미지를 여기에 추가)
+## 📄 라이선스
 
-**예시: 사용자 그룹별 선호 도서 분야**
-![분석 결과 이미지 1](images/image_18e9dc.png)
-
-**예시: 프로그램 참여 예측 모델 결과**
-![분석 결과 이미지 2](images/image_18ea3a.png)
-
-* **설명**: 위 그래프는 ...을 보여주며, 이를 통해 ...라는 결론을 얻을 수 있습니다.
-
-<br>
-
-## 💡 결론 및 제안
-분석 결과를 바탕으로 **'초등학생을 위한 학습 연계 도서관 프로그램'**의 구체적인 내용을 제안합니다. 자세한 내용은 `report/` 폴더의 제안서를 참고해주세요.
-
-* **기대효과 1**: 학생들의 독서 흥미 유발 및 자기주도 학습 능력 향상
-* **기대효과 2**: ...
-
-<br>
-
-## 👤 만든이
-* **이름**: 이규원, 문지훈, 이민성, 엄태용
+MIT
